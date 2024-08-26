@@ -1,3 +1,7 @@
+def divisao(a, b):
+    if b == 0:
+        return ("Não pode ser feito divisão por 0")
+    return (a / b)
 op = "1"
 while op != "0" :
     print('''
@@ -25,9 +29,7 @@ while op != "0" :
     elif op == "4" :
         n1 = int(input("Digite um numero: "))
         n2 = int(input("Digite um numero 2: "))
-        if n2 == 0:
-            print("Não exite divisão é por 0")
-        print(f"{n1} : {n2} = {n1/n2}")
+        print(divisao(n1, n2))
     elif op == "5" :
         n1 = int(input("Digite um numero: "))
         print(f"{n1} x {n1} = {n1*n1}")
